@@ -26,7 +26,7 @@ class ViewController: UIViewController, SettingsDelegate, AVAudioPlayerDelegate 
     var newBg: UIImageView!
     let defaults = UserDefaults.standard
     var statusLabel: UILabel!
-    var emojis = ["😉", "🐶", "🐹", "😸"]
+    var emojis = ["😉", "🐶", "🐹", "😸", "🤠", "🤓", "🐣", "👻"]
     var audioPlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
@@ -147,7 +147,7 @@ class ViewController: UIViewController, SettingsDelegate, AVAudioPlayerDelegate 
         
         let content = UNMutableNotificationContent()
         content.title = "Yo Dole " + emojis[Int(arc4random_uniform(UInt32(emojis.count)))]
-        content.body = "Its time to sit straight 💁🏻"
+        content.body = "Its time to sit straight."
         content.categoryIdentifier = "alarm"
         content.sound = UNNotificationSound.default()
         

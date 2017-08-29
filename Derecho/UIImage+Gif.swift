@@ -9,6 +9,8 @@
 import UIKit
 import ImageIO
 
+var cache = UserDefaults.standard
+
 extension UIImageView {
 
     public func loadGif(name: String) {
@@ -35,6 +37,12 @@ extension UIImage {
     }
 
     public class func gif(url: String) -> UIImage? {
+        
+        //Fetch from cache
+        if let data = cache.object(forKey: url) {
+            return gif(data: data as! Data)
+        }
+        
         // Validate URL
         guard let bundleURL = URL(string: url) else {
             print("SwiftGif: This image named \"\(url)\" does not exist")
@@ -46,7 +54,7 @@ extension UIImage {
             print("SwiftGif: Cannot turn image named \"\(url)\" into NSData")
             return nil
         }
-
+        cache.set(imageData, forKey: url)
         return gif(data: imageData)
     }
 

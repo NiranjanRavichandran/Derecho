@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
+        
+        INPreferences.requestSiriAuthorization { status in
+            if status == .authorized {
+                print("Hey Siri!")
+            }else {
+                print("Nay Siri!")
+            }
+        }
+        
         return true
     }
 

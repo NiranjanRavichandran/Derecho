@@ -14,6 +14,9 @@
 		4249FAA01F31256D005AD86B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4249FA9E1F31256D005AD86B /* LaunchScreen.storyboard */; };
 		4249FAAB1F31256D005AD86B /* DerechoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249FAAA1F31256D005AD86B /* DerechoUITests.swift */; };
 		4249FAB61F3223E6005AD86B /* DUISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249FAB51F3223E6005AD86B /* DUISwitch.swift */; };
+		4252A4491F3CE1DB002988C3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252A4481F3CE1DB002988C3 /* IntentHandler.swift */; };
+		4252A45F1F3CE1DB002988C3 /* DoleRequestExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4252A4461F3CE1DB002988C3 /* DoleRequestExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4252A4681F3CE39E002988C3 /* DoleRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252A4671F3CE39E002988C3 /* DoleRequestHandler.swift */; };
 		42E027FB1F33802B0042D57D /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E027FA1F33802B0042D57D /* UIImage+Gif.swift */; };
 		42E027FD1F34FF7B0042D57D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E027FC1F34FF7B0042D57D /* SettingsViewController.swift */; };
 		42E027FF1F3517B40042D57D /* AIFlatSwicth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E027FE1F3517B40042D57D /* AIFlatSwicth.swift */; };
@@ -28,7 +31,28 @@
 			remoteGlobalIDString = 4249FA911F31256D005AD86B;
 			remoteInfo = Derecho;
 		};
+		4252A45D1F3CE1DB002988C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4249FA8A1F31256C005AD86B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4252A4451F3CE1DB002988C3;
+			remoteInfo = DoleRequestExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4252A4661F3CE1DB002988C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4252A45F1F3CE1DB002988C3 /* DoleRequestExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4249FA921F31256D005AD86B /* Derecho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Derecho.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +66,12 @@
 		4249FAAA1F31256D005AD86B /* DerechoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerechoUITests.swift; sourceTree = "<group>"; };
 		4249FAAC1F31256D005AD86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4249FAB51F3223E6005AD86B /* DUISwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUISwitch.swift; sourceTree = "<group>"; };
+		4252A4461F3CE1DB002988C3 /* DoleRequestExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DoleRequestExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4252A4481F3CE1DB002988C3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		4252A44A1F3CE1DB002988C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4252A4511F3CE1DB002988C3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		4252A4671F3CE39E002988C3 /* DoleRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoleRequestHandler.swift; sourceTree = "<group>"; };
+		4252A4691F3CE610002988C3 /* Derecho.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Derecho.entitlements; sourceTree = "<group>"; };
 		42E027FA1F33802B0042D57D /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		42E027FC1F34FF7B0042D57D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		42E027FE1F3517B40042D57D /* AIFlatSwicth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIFlatSwicth.swift; sourceTree = "<group>"; };
@@ -63,6 +93,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4252A4431F3CE1DB002988C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +108,8 @@
 			children = (
 				4249FA941F31256D005AD86B /* Derecho */,
 				4249FAA91F31256D005AD86B /* DerechoUITests */,
+				4252A4471F3CE1DB002988C3 /* DoleRequestExtension */,
+				4252A4501F3CE1DB002988C3 /* Frameworks */,
 				4249FA931F31256D005AD86B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +119,7 @@
 			children = (
 				4249FA921F31256D005AD86B /* Derecho.app */,
 				4249FAA61F31256D005AD86B /* DerechoUITests.xctest */,
+				4252A4461F3CE1DB002988C3 /* DoleRequestExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +127,7 @@
 		4249FA941F31256D005AD86B /* Derecho */ = {
 			isa = PBXGroup;
 			children = (
+				4252A4691F3CE610002988C3 /* Derecho.entitlements */,
 				4249FA951F31256D005AD86B /* AppDelegate.swift */,
 				4249FA971F31256D005AD86B /* ViewController.swift */,
 				42E027FA1F33802B0042D57D /* UIImage+Gif.swift */,
@@ -111,6 +152,24 @@
 			path = DerechoUITests;
 			sourceTree = "<group>";
 		};
+		4252A4471F3CE1DB002988C3 /* DoleRequestExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4252A4481F3CE1DB002988C3 /* IntentHandler.swift */,
+				4252A4671F3CE39E002988C3 /* DoleRequestHandler.swift */,
+				4252A44A1F3CE1DB002988C3 /* Info.plist */,
+			);
+			path = DoleRequestExtension;
+			sourceTree = "<group>";
+		};
+		4252A4501F3CE1DB002988C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4252A4511F3CE1DB002988C3 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,10 +180,12 @@
 				4249FA8E1F31256D005AD86B /* Sources */,
 				4249FA8F1F31256D005AD86B /* Frameworks */,
 				4249FA901F31256D005AD86B /* Resources */,
+				4252A4661F3CE1DB002988C3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4252A45E1F3CE1DB002988C3 /* PBXTargetDependency */,
 			);
 			name = Derecho;
 			productName = Derecho;
@@ -149,6 +210,23 @@
 			productReference = 4249FAA61F31256D005AD86B /* DerechoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4252A4451F3CE1DB002988C3 /* DoleRequestExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4252A4651F3CE1DB002988C3 /* Build configuration list for PBXNativeTarget "DoleRequestExtension" */;
+			buildPhases = (
+				4252A4421F3CE1DB002988C3 /* Sources */,
+				4252A4431F3CE1DB002988C3 /* Frameworks */,
+				4252A4441F3CE1DB002988C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoleRequestExtension;
+			productName = DoleRequestExtension;
+			productReference = 4252A4461F3CE1DB002988C3 /* DoleRequestExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,12 +241,22 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7R8U9B2AP5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					4249FAA51F31256D005AD86B = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7R8U9B2AP5;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4249FA911F31256D005AD86B;
+					};
+					4252A4451F3CE1DB002988C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7R8U9B2AP5;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -187,6 +275,7 @@
 			targets = (
 				4249FA911F31256D005AD86B /* Derecho */,
 				4249FAA51F31256D005AD86B /* DerechoUITests */,
+				4252A4451F3CE1DB002988C3 /* DoleRequestExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -204,6 +293,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4249FAA41F31256D005AD86B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4252A4441F3CE1DB002988C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,6 +330,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4252A4421F3CE1DB002988C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4252A4681F3CE39E002988C3 /* DoleRequestHandler.swift in Sources */,
+				4252A4491F3CE1DB002988C3 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -241,6 +346,11 @@
 			isa = PBXTargetDependency;
 			target = 4249FA911F31256D005AD86B /* Derecho */;
 			targetProxy = 4249FAA71F31256D005AD86B /* PBXContainerItemProxy */;
+		};
+		4252A45E1F3CE1DB002988C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4252A4451F3CE1DB002988C3 /* DoleRequestExtension */;
+			targetProxy = 4252A45D1F3CE1DB002988C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -362,7 +472,9 @@
 		4249FAB01F31256D005AD86B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Derecho/Derecho.entitlements;
 				DEVELOPMENT_TEAM = 7R8U9B2AP5;
 				INFOPLIST_FILE = Derecho/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -376,7 +488,9 @@
 		4249FAB11F31256D005AD86B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Derecho/Derecho.entitlements;
 				DEVELOPMENT_TEAM = 7R8U9B2AP5;
 				INFOPLIST_FILE = Derecho/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -415,6 +529,32 @@
 			};
 			name = Release;
 		};
+		4252A4601F3CE1DB002988C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = DoleRequestExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.Derecho.DoleRequestExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4252A4611F3CE1DB002988C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = DoleRequestExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.Derecho.DoleRequestExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +584,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4252A4651F3CE1DB002988C3 /* Build configuration list for PBXNativeTarget "DoleRequestExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4252A4601F3CE1DB002988C3 /* Debug */,
+				4252A4611F3CE1DB002988C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
